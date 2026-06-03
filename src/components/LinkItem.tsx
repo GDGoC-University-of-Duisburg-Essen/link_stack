@@ -13,9 +13,22 @@ interface LinkItemProps {
 const IconMapper: React.FC<{ type: string; value: string }> = ({ type, value }) => {
   if (type === "react-icon") {
     switch (value) {
-      case "FaWhatsapp": return <FaWhatsapp className="link-icon" />;
-      case "FaInstagram": return <FaInstagram className="link-icon" />;
-      case "FaGithub": return <FaGithub className="link-icon" />;
+      case "FaWhatsapp": return <FaWhatsapp className="link-icon" style={{ color: "#25D366" }} />;
+      case "FaInstagram": return (
+        <>
+          <svg width="0" height="0" style={{ position: 'absolute' }}>
+            <linearGradient id="ig-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop stopColor="#f09433" offset="0%" />
+              <stop stopColor="#e6683c" offset="25%" />
+              <stop stopColor="#dc2743" offset="50%" />
+              <stop stopColor="#cc2366" offset="75%" />
+              <stop stopColor="#bc1888" offset="100%" />
+            </linearGradient>
+          </svg>
+          <FaInstagram className="link-icon" style={{ fill: "url(#ig-gradient)" }} />
+        </>
+      );
+      case "FaGithub": return <FaGithub className="link-icon" style={{ color: "#ffffff" }} />;
       case "FaEnvelope": return <FaEnvelope className="link-icon" />;
       default: return null;
     }

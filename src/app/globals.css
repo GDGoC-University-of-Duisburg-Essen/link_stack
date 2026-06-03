@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Material Design 3 Light Mode Colors */
-  --md-sys-color-primary: #0b57d0;
-  --md-sys-color-on-primary: #ffffff;
-  --md-sys-color-surface: #ffffff;
-  --md-sys-color-on-surface: #1f1f1f;
-  --md-sys-color-surface-container: #f1f3f4;
-  --md-sys-color-surface-container-high: #e8eaed;
-  --md-sys-color-outline: #747775;
-  --md-sys-color-outline-variant: #c4c7c5;
-  --background-start: #f8f9fa;
-  --background-end: #e8eaed;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* Material Design 3 Light Mode Colors - Adjusted for Dark Base */
+  --md-sys-color-primary: #a8c7fa;
+  --md-sys-color-on-primary: #062e6f;
+  --md-sys-color-surface: #1e1e1e;
+  --md-sys-color-on-surface: #e3e3e3;
+  --md-sys-color-surface-container: #282a2c;
+  --md-sys-color-surface-container-high: #333537;
+  --md-sys-color-outline: #8e918f;
+  --md-sys-color-outline-variant: #444746;
+  --glass-bg: rgba(40, 42, 44, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
   --transition-speed: 0.3s;
 }
 
@@ -25,15 +23,13 @@
     /* Material Design 3 Dark Mode Colors */
     --md-sys-color-primary: #a8c7fa;
     --md-sys-color-on-primary: #062e6f;
-    --md-sys-color-surface: #131314;
+    --md-sys-color-surface: #1e1e1e;
     --md-sys-color-on-surface: #e3e3e3;
-    --md-sys-color-surface-container: #1e1f20;
-    --md-sys-color-surface-container-high: #282a2c;
+    --md-sys-color-surface-container: #282a2c;
+    --md-sys-color-surface-container-high: #333537;
     --md-sys-color-outline: #8e918f;
     --md-sys-color-outline-variant: #444746;
-    --background-start: #0e0e0e;
-    --background-end: #1a1a1c;
-    --glass-bg: rgba(30, 31, 32, 0.7);
+    --glass-bg: rgba(40, 42, 44, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
@@ -47,10 +43,13 @@
   padding: 0;
 }
 
+html {
+  background-color: #1E1E1E;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(135deg, var(--background-start), var(--background-end));
-  background-attachment: fixed;
+  background-color: #1E1E1E;
   color: var(--md-sys-color-on-surface);
   min-height: 100vh;
   display: flex;
