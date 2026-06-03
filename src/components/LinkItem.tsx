@@ -10,7 +10,9 @@ interface LinkItemProps {
   link: LinkItemData;
 }
 
-const IconMapper: React.FC<{ type: string; value: string }> = ({ type, value }) => {
+import type { StaticImageData } from "next/image";
+
+const IconMapper: React.FC<{ type: string; value: string | StaticImageData }> = ({ type, value }) => {
   if (type === "react-icon") {
     switch (value) {
       case "FaWhatsapp": return <FaWhatsapp className="link-icon" style={{ color: "#25D366" }} />;

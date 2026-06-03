@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import logoImg from "../../public/assets/logo.png";
 import { links } from "@/config/links";
 import { LinkItem } from "@/components/LinkItem";
 
@@ -9,7 +10,7 @@ export default function Home() {
       <header className="header">
         <div className="logo-container">
           <Image 
-            src="/assets/logo.png" 
+            src={logoImg} 
             alt="Link Stack Logo" 
             fill 
             sizes="100px" 

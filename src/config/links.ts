@@ -1,3 +1,7 @@
+import type { StaticImageData } from "next/image";
+import gdgBrackets from "../../public/assets/GDG Brackets.png";
+import fsi from "../../public/assets/fsi.png";
+
 export type LinkItemData = {
   id: string;
   url: string;
@@ -6,7 +10,7 @@ export type LinkItemData = {
   de: string;
   en: string;
   iconType: 'react-icon' | 'image';
-  iconValue: string; // React-Icon component name or image path
+  iconValue: string | StaticImageData; // React-Icon component name or imported image
 };
 
 export const links: LinkItemData[] = [
@@ -24,7 +28,7 @@ export const links: LinkItemData[] = [
     de: 'Vortragsfolien',
     en: 'Talk Slides',
     iconType: 'image',
-    iconValue: '/assets/GDG Brackets.png',
+    iconValue: gdgBrackets,
   },
   {
     id: 'website',
@@ -32,7 +36,7 @@ export const links: LinkItemData[] = [
     de: 'Website',
     en: 'Website',
     iconType: 'image',
-    iconValue: '/assets/GDG Brackets.png',
+    iconValue: gdgBrackets,
   },
   {
     id: 'instagram',
@@ -56,7 +60,7 @@ export const links: LinkItemData[] = [
     de: 'Fachschaft Informatik',
     en: 'Computer Science Student Council',
     iconType: 'image',
-    iconValue: '/assets/fsi.png',
+    iconValue: fsi,
   },
   {
     id: 'email',
