@@ -1,4 +1,4 @@
-# ⛃ GDG Link Stack
+# 🔗 GDG Link Stack
 ![GDGoC Essen](https://img.shields.io/badge/Community-GDGoC%20Essen-blue?style=for-the-badge&logo=google)
 
 This is the official Link Stack for the **Google Developer Group (GDG) On Campus University of Duisburg-Essen**. 
