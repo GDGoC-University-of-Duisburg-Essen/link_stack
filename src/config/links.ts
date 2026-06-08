@@ -48,7 +48,7 @@ export const links: LinkItemData[] = [
   },
   {
     id: 'github',
-    url: 'https://github.com/GDGoC-University-of-Duisburg-Essen/talk_hub',
+    url: 'https://github.com/GDGoC-University-of-Duisburg-Essen',
     de: 'GitHub',
     en: 'GitHub',
     iconType: 'react-icon',
