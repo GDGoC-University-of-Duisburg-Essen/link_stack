@@ -19,6 +19,9 @@ export default function Home() {
           />
         </div>
         <h1 className="header-title">Link Stack</h1>
+        <p className="header-description">
+          Folge unseren Kanälen, um über weitere Vorträge, Workshops und Ausflüge der Google Developer Group University of Duisburg-Essen auf dem Laufenden zu bleiben!
+        </p>
       </header>
 
       <section className="links-container">
