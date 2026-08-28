@@ -16,7 +16,7 @@ export type LinkItemData = {
 export const links: LinkItemData[] = [
   {
     id: 'whatsapp',
-    url: 'https://gdgoc-university-of-duisburg-essen.github.io/main_redirect/',
+    url: 'https://whatsapp.com/channel/0029Vb6ygx9Gk1FjrI9aTW1M',
     de: 'WhatsApp Kanal',
     en: 'WhatsApp Channel',
     iconType: 'react-icon',
