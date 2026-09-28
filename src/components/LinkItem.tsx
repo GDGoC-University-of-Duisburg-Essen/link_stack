@@ -51,6 +51,24 @@ export const LinkItem: React.FC<LinkItemProps> = ({ link }) => {
   const { language } = useLanguage();
   const text = link[language];
 
+  if (link.isAlert) {
+    const handleAlertClick = (e: React.MouseEvent) => {
+      e.preventDefault();
+      if (link.alertText) {
+        alert(link.alertText[language]);
+      }
+    };
+
+    return (
+      <a href={link.url} onClick={handleAlertClick} className="link-item">
+        <div className="link-content">
+          <IconMapper type={link.iconType} value={link.iconValue} />
+          <span className="link-title">{text}</span>
+        </div>
+      </a>
+    );
+  }
+
   if (link.isEmail) {
     return (
       <a href={link.url} className="link-item email-item" target="_blank" rel="noopener noreferrer">

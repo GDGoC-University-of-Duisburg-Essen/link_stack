@@ -7,6 +7,11 @@ export type LinkItemData = {
   url: string;
   isEmail?: boolean;
   emailAddress?: string;
+  isAlert?: boolean;
+  alertText?: {
+    de: string;
+    en: string;
+  };
   de: string;
   en: string;
   iconType: 'react-icon' | 'image';
@@ -21,6 +26,19 @@ export const links: LinkItemData[] = [
     en: 'WhatsApp Channel',
     iconType: 'react-icon',
     iconValue: 'FaWhatsapp',
+  },
+  {
+    id: 'certify',
+    url: '#',
+    isAlert: true,
+    alertText: {
+      de: 'Diese Plattform wird aktuell noch gewartet. Die erste Beta-Version wird voraussichtlich in den 1-2 Tagen hier veröffentlicht.',
+      en: 'This platform is currently still under maintenance. The first beta version will likely be published here in the next 1-2 days.',
+    },
+    de: 'Event Zertifizierungen',
+    en: 'Event Certify',
+    iconType: 'image',
+    iconValue: gdgBrackets,
   },
   {
     id: 'talks',
